@@ -1,0 +1,11 @@
+server:
+  port: 8090
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      username: user
+      password: pass
+      database: kotlin
+      port: 27017
+      host: database
