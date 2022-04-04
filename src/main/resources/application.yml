@@ -4,8 +4,8 @@ spring:
   data:
     mongodb:
       authentication-database: admin
-      username: user
-      password: pass
-      database: kotlin
+      username: root
+      password: example
+      database: financialdb
       port: 27017
-      host: database
+      host: localhost
