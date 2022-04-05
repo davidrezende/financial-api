@@ -9,3 +9,8 @@ spring:
       database: financialdb
       port: 27017
       host: localhost
+
+springdoc:
+  swagger-ui:
+    disable-swagger-default-url=true:
+  packagesToScan: "com.kotlin.financial.entrypoint"

@@ -1,6 +1,6 @@
 package com.kotlin.financial.service
 
-import com.kotlin.financial.model.User
+import com.kotlin.financial.model.collection.User
 import java.util.*
 
 interface UserService {

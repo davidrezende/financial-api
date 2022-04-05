@@ -1,6 +1,6 @@
 package com.kotlin.financial.service.impl
 
-import com.kotlin.financial.model.User
+import com.kotlin.financial.model.collection.User
 import com.kotlin.financial.repository.UserRepository
 import com.kotlin.financial.service.UserService
 import org.springframework.stereotype.Service
