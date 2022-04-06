@@ -5,5 +5,5 @@ import java.util.*
 
 interface UserService {
     fun save(user: User): User
-    fun byId(idUser: String): Optional<User>
+    fun byId(idUser: Long): Optional<User>
 }

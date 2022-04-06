@@ -1,11 +1,15 @@
 package com.kotlin.financial.model.vo
 
+import com.fasterxml.jackson.annotation.JsonIgnore
 import org.springframework.data.annotation.Id
 import java.math.BigDecimal
 import java.time.LocalDate
 import java.time.LocalDateTime
 
 data class RepeatItem(
+
+    @Transient
+    @JsonIgnore val SEQUENCE_NAME: String = "repeat_items_sequence",
     @Id
     val idRepeatItem: Long,
     val description: String,

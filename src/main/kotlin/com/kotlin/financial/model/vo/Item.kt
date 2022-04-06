@@ -1,12 +1,16 @@
 package com.kotlin.financial.model.vo
 
+import com.fasterxml.jackson.annotation.JsonIgnore
 import org.springframework.data.annotation.Id
 import java.math.BigDecimal
 import java.time.LocalDate
 
 data class Item(
+
+    @Transient
+    @JsonIgnore val SEQUENCE_NAME: String = "items_sequence",
     @Id
-    val idItem: Long,
+    var idItem: Long,
     val description: String,
     val categoryItem: CategoryItem? = CategoryItem.OTHER,
     val month: Int? = LocalDate.now().monthValue,

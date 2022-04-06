@@ -34,7 +34,7 @@ class UserController(private val service: UserService) {
         ]
     )
     @GetMapping("/{userId}")
-    fun findUser(@PathVariable userId: String): Optional<User> {
+    fun findUser(@PathVariable userId: Long): Optional<User> {
         return service.byId(userId)
     }
 }
